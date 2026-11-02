@@ -518,3 +518,8 @@ form.contact input:focus,form.contact textarea:focus,form.contact select:focus {
 /* ===== header: azul oscuro del sitio original, sin brillo azul intenso ===== */
 .site-header::before{display:none!important}
 .site-header{background:rgba(12,16,39,.94)!important}
+
+/* ===== logos de clientes ===== */
+.client-img{display:flex;align-items:center;justify-content:center;width:100%;height:96px;margin-bottom:6px}
+.client-img img{max-height:96px;max-width:100%;width:auto;height:auto;object-fit:contain}
+.client-img-dark img{height:96px;width:96px;border-radius:14px}

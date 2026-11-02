@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
+  <title id="title">Rodri Transportes y Mudanzas</title>
+  <desc id="desc">Logotipo corporativo azul marino y naranja con una R estilizada y una carretera.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#06213B" d="M36 28h116c43 0 73 22 73 58 0 28-17 47-44 54l48 42h-55l-44-38H90v38H36V28zm54 42v36h58c15 0 24-7 24-18s-9-18-24-18H90z"/>
+    <path fill="#FF650F" d="M28 176c35-43 72-70 114-82 18-5 37-8 57-7-28 8-54 22-78 42-19 16-36 33-51 53H28z"/>
+    <path fill="#06213B" d="M91 181c29-37 60-61 95-72 16-5 31-7 48-7-24 8-46 20-65 36-16 13-30 27-43 43H91z"/>
+    <path stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 14" d="M111 169c21-24 44-41 69-50" opacity=".95"/>
+    <text x="248" y="88" fill="#06213B" font-family="Archivo, Arial, sans-serif" font-size="72" font-weight="900" letter-spacing="1">RODRI</text>
+    <text x="252" y="137" fill="#FF650F" font-family="Archivo, Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="1.5">TRANSPORTES</text>
+    <text x="252" y="177" fill="#06213B" font-family="Archivo, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="6">Y MUDANZAS</text>
+    <text x="253" y="205" fill="#5F6F80" font-family="Figtree, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">ESPAÑA · EUROPA · REINO UNIDO</text>
+  </g>
+</svg>
