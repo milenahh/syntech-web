@@ -431,11 +431,11 @@ form.contact input:focus,form.contact textarea:focus,form.contact select:focus {
 }
 .logo {
   display: inline-flex; align-items: center; background: #fff; border-radius: 16px;
-  padding: 6px 10px; box-shadow: 0 10px 26px rgba(0,0,0,.28);
+  padding: 8px 14px; box-shadow: 0 10px 26px rgba(0,0,0,.28);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .logo:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(163,255,203,.25); }
-.site-header .logo img { height: 66px; width: auto; filter: none; }
+.site-header .logo img { height: clamp(72px, 9vw, 100px); width: auto; filter: none; }
 .site-footer .footer-logo {
   background: #fff; border-radius: 16px; padding: 8px 14px;
   height: 92px; width: auto; display: block; margin-bottom: 18px;
