@@ -514,3 +514,7 @@ form.contact input:focus,form.contact textarea:focus,form.contact select:focus {
 .client-card strong{font-size:1.08rem;font-weight:800;color:#0c1027}
 .client-card small{color:#5b6482;font-size:.88rem;line-height:1.45}
 .client-card:hover strong{color:#3b4fd8}
+
+/* ===== header: azul oscuro del sitio original, sin brillo azul intenso ===== */
+.site-header::before{display:none!important}
+.site-header{background:rgba(12,16,39,.94)!important}
