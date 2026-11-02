@@ -93,7 +93,7 @@ function sendQuote() {
     .map(li => li.innerText.replace(/\n/g, " - "))
     .join("\n");
   const body = "Hola, quiero esta cotización:\n\n" + lines + "\n\n" + el("total").textContent + "\n\nNombre:\nNegocio:";
-  window.location.href = "mailto:contacto@syntechsolutions.com?subject=" +
+  window.location.href = "mailto:contacto@syntechslt.com?subject=" +
     encodeURIComponent("Solicitud de cotización - Syntech Solutions") +
     "&body=" + encodeURIComponent(body);
 }
