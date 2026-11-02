@@ -454,3 +454,19 @@ form.contact input:focus,form.contact textarea:focus,form.contact select:focus {
 .faq summary::after { content: "+"; float: right; color: #536dff; font-weight: 800; }
 .faq details[open] summary::after { content: "–"; }
 .faq p { margin: 10px 0 0; color: #5b6482; }
+
+/* ===== Formulario de cotización a WhatsApp ===== */
+.modal[hidden]{display:none}
+.modal{position:fixed;inset:0;background:rgba(11,18,48,.72);backdrop-filter:blur(4px);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal-box{position:relative;background:#fff;border-radius:22px;padding:34px;width:100%;max-width:480px;max-height:92vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.modal-box h2{margin:0 0 6px;color:var(--brand-dark);font-size:1.6rem}
+.modal-sub{margin:0 0 8px;color:var(--muted);font-size:.95rem}
+.modal-items{margin:0 0 18px;padding-left:18px;color:var(--text);font-size:.92rem}
+.modal-items li{margin-bottom:4px}
+.modal-close{position:absolute;top:12px;right:14px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--muted);line-height:1}
+#quoteForm{display:grid;gap:12px}
+#quoteForm label{display:grid;gap:6px;font-size:.92rem;font-weight:600;color:var(--text)}
+#quoteForm input{padding:12px 14px;border:1px solid #d9dfef;border-radius:12px;font:inherit;font-weight:400}
+#quoteForm input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 4px rgba(37,99,235,.15)}
+#quoteForm .btn{justify-self:start;margin-top:6px}
+.modal-fine{margin:14px 0 0;color:var(--muted);font-size:.85rem}

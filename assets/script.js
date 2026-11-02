@@ -88,14 +88,47 @@ function render(items) {
     : "Precio sujeto a confirmación. Dominios en USD convertidos a COP según la TRM del día.";
 }
 
-function sendQuote() {
-  const lines = [...document.querySelectorAll("#lines li")]
-    .map(li => li.innerText.replace(/\n/g, " - "))
-    .join("\n");
-  const body = "Hola, quiero esta cotización:\n\n" + lines + "\n\n" + el("total").textContent + "\n\nNombre:\nNegocio:";
-  window.location.href = "mailto:contacto@syntechslt.com?subject=" +
-    encodeURIComponent("Solicitud de cotización - Syntech Solutions") +
-    "&body=" + encodeURIComponent(body);
+const WA_NUMBER = "573193757476";
+
+function quoteLines() {
+  return [...document.querySelectorAll("#lines li")].map(li => li.innerText.replace(/\n/g, " - "));
 }
+
+function openQuoteForm() {
+  const lines = quoteLines();
+  if (lines.length === 0) return;
+  const ul = el("quoteItems");
+  ul.innerHTML = "";
+  lines.forEach(t => { const li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+  const modal = el("quoteModal");
+  modal.hidden = false;
+  document.body.style.overflow = "hidden";
+  el("qName").focus();
+}
+
+function closeQuoteForm() {
+  el("quoteModal").hidden = true;
+  document.body.style.overflow = "";
+}
+
+function sendQuoteWhatsApp(e) {
+  e.preventDefault();
+  const name = el("qName").value.trim();
+  const phone = el("qPhone").value.trim();
+  const email = el("qEmail").value.trim();
+  const biz = el("qBiz").value.trim();
+  const total = el("total").textContent;
+  const msg = "Hola Syntech Solutions, quiero una solicitud:\n\n" +
+    "Nombre: " + name + "\n" +
+    "Teléfono: " + phone + "\n" +
+    (email ? "Correo: " + email + "\n" : "") +
+    (biz ? "Negocio: " + biz + "\n" : "") +
+    "\nServicios:\n" + quoteLines().map(l => "- " + l).join("\n") +
+    "\n\n" + total;
+  window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  closeQuoteForm();
+}
+
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeQuoteForm(); });
 
 document.addEventListener("DOMContentLoaded", recalc);
