@@ -523,3 +523,4 @@ form.contact input:focus,form.contact textarea:focus,form.contact select:focus {
 .client-img{display:flex;align-items:center;justify-content:center;width:100%;height:96px;margin-bottom:6px}
 .client-img img{max-height:96px;max-width:100%;width:auto;height:auto;object-fit:contain}
 .client-img-dark img{height:96px;width:96px;border-radius:14px}
+.client-img-becorati img{background:#1f1a17}
