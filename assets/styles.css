@@ -508,3 +508,9 @@ form.contact input:focus,form.contact textarea:focus,form.contact select:focus {
 .step b{display:grid;place-items:center;width:60px;height:60px;border-radius:18px;background:#a3ffcb;color:#0c1027;font-size:1.5rem;font-weight:900;margin-bottom:24px}
 .step h3{margin:0 0 10px;font-size:1.3rem;font-weight:900;color:#fff}
 .step p{margin:0;color:#c9d0ee}
+
+/* ===== clientes con nombre y enlace ===== */
+.client-card{flex-direction:column;text-align:center;padding:26px 22px;height:auto;min-height:150px;text-decoration:none;color:#0c1027;gap:8px}
+.client-card strong{font-size:1.08rem;font-weight:800;color:#0c1027}
+.client-card small{color:#5b6482;font-size:.88rem;line-height:1.45}
+.client-card:hover strong{color:#3b4fd8}
